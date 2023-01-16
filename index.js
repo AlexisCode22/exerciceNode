@@ -1,8 +1,5 @@
-let data = require("./information");
-console.log(data);
+require("dotenv").config();
 
-const cowsay = require ("cowsay");
-
-console.log (cowsay.say({ 
-    text 'je suis ${data.name} du campus ${data.campus}',
-} ) ) ;
+console.log(
+  `I am ${process.env.MY_NAME}, wilder in ${process.env.MY_CITY}, and I love ${process.env.MY_LANGUAGE}`
+);
